@@ -1,0 +1,10 @@
+touch ft_putchar.c
+#include <unistd.h>
+void ft_putchar(char c)
+{write (1, &c , 1);}
+
+int main(void)
+{ft_putchar('z');} #testheseg
+gcc -Wall -Wextra -Werror ft_putchar
+-ls -l
+./a.out
